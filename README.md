@@ -4,79 +4,70 @@
 This project predicts whether an employee's annual salary exceeds $50K based on demographic and occupational features. Using machine learning techniques, specifically a Gradient Boosting Classifier, the model classifies income levels to assist in HR decision-making and recruitment processes.
 
 ## Features
-- Handles missing data by replacing unknown values.
-- Groups rare categories for better model performance.
-- Encodes categorical variables using OneHotEncoder.
-- Predicts salary class using Gradient Boosting Classifier.
-- Provides an interactive web interface via Streamlit for real-time predictions.
+- Handles missing data by replacing unknown values
+- Groups rare categories for better model performance
+- Encodes categorical variables using OneHotEncoder
+- Predicts salary class using Gradient Boosting Classifier
+- Provides an interactive web interface via Streamlit for real-time predictions
 
 ## System Requirements
-- Operating System: Windows, macOS, or Linux
-- Python 3.x
-- RAM: Minimum 4 GB (8 GB recommended)
-- At least 1 GB free disk space
+- **Operating System:** Windows, macOS, or Linux
+- **Python:** 3.x
+- **RAM:** Minimum 4 GB (8 GB recommended)
+- **Storage:** At least 1 GB free disk space
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/employee-salary-prediction.git
    cd employee-salary-prediction
-Create and activate a virtual environment (optional but recommended):
+   ```
 
-bash
-Copy
-Edit
-python -m venv env
-source env/bin/activate   # On Windows: env\Scripts\activate
-Install required libraries:
+2. **Create and activate a virtual environment** (optional but recommended):
+   ```bash
+   python -m venv env
+   source env/bin/activate   # On Windows: env\Scripts\activate
+   ```
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Usage
-Training the Model
-Open the Jupyter notebook Employee_Salary_Prediction.ipynb.
+3. **Install required libraries:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Run all cells to preprocess data, train the model, and save the trained model and encoder.
+## Usage
 
-Running the Streamlit App
-Run the Streamlit app:
+### Training the Model
+1. Open the Jupyter notebook `Employee_Salary_Prediction.ipynb`
+2. Run all cells to preprocess data, train the model, and save the trained model and encoder
 
-bash
-Copy
-Edit
-streamlit run app.py
-Use the web interface to input employee details and get salary predictions in real-time.
+### Running the Streamlit App
+1. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+2. Use the web interface to input employee details and get salary predictions in real-time
 
-Project Structure
-bash
-Copy
-Edit
+## Project Structure
+```
 ├── Employee_Salary_Prediction.ipynb  # Jupyter notebook for data processing and model training
 ├── app.py                            # Streamlit app for real-time salary prediction
 ├── Project template 4.pptx           # Presentation template used
-├── model.pkl                        # Saved trained model (after running notebook)
-├── encoder.pkl                      # Saved encoder (after running notebook)
-├── requirements.txt                 # Required Python packages
-└── README.md                       # Project overview and instructions
-Libraries Used
-pandas
+├── model.pkl                         # Saved trained model (after running notebook)
+├── encoder.pkl                       # Saved encoder (after running notebook)
+├── requirements.txt                  # Required Python packages
+└── README.md                         # Project overview and instructions
+```
 
-numpy
+## Libraries Used
+- pandas
+- numpy
+- scikit-learn
+- pickle
+- streamlit
 
-scikit-learn
-
-pickle
-
-streamlit
-
-Future Enhancements
-Incorporate additional features like education level and marital status.
-
-Experiment with other machine learning algorithms to improve accuracy.
-
-Deploy as an API for wider enterprise use.
-
-Address model fairness and bias considerations.
+## Future Enhancements
+- Incorporate additional features like education level and marital status
+- Experiment with other machine learning algorithms to improve accuracy
+- Deploy as an API for wider enterprise use
+- Address model fairness and bias considerations
